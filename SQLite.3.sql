@@ -9,3 +9,7 @@ UPDATE Books SET price = 10.99, stock_count = 4 WHERE book_id = 2
 -- Exercise 5
 
 GRANT SELECT, UPDATE ON Books TO martin@localhost
+
+-- Exercise 6
+
+REVOKE UPDATE ON Books TO martin@localhost
