@@ -13,3 +13,9 @@ GRANT SELECT, UPDATE ON Books TO martin@localhost
 -- Exercise 6
 
 REVOKE UPDATE ON Books TO martin@localhost
+
+-- Exercise 7
+
+BEGIN TRANSACTION;
+DELETE FROM Books WHERE book_id = 101;
+COMMIT;
